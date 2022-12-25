@@ -59,7 +59,7 @@ const render = () => {
     const button = document.createElement("button");
 
     button.id = buttonID(key, value);
-    button.classList.add( "btn", "btn-secondary");
+    button.classList.add( "btn", "btn-secondary", "mx-1");
     button.innerHTML = value;
     button.onclick = () => toggleButton(key, value);
 
@@ -132,8 +132,8 @@ const render = () => {
 
   function renderButtons() {
     // container.appendChild( addAllButton() );
-    buttonRows = document.getElementById("buttons").appendChild( addAllButton());
-
+    //buttonRows = document.getElementById("buttons").appendChild( addAllButton());
+    const buttonRows = document.getElementById("buttons")
     Object.entries(categories).map( ([category, values]) => {
       const row = document.createElement("div");
       row.id = `button-row-${category}`;
@@ -180,7 +180,7 @@ const render = () => {
     col.setAttribute("id", projectID(i));
     col.classList.add("fade", "show")
 
-    card.setAttribute("class", "card", "shadow-sm");
+    card.setAttribute("class", "card shadow-sm");
 
     card.appendChild( makeCardImage(project) );
     card.appendChild( makeCardBody(project) );

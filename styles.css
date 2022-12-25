@@ -10,34 +10,9 @@ img {
   object-fit: cover;
 }
 
-
-
-.card-image {
-  width: 33%;
-  align-self: center;
-}
-
-.card-body {
-  width: 66%;
-}
-
-.hidden {
-    display: none;
-}
-
-.button {
-  color: black;
-  text-align: center;
-  font-size: 16px;
-  border-radius: 8px;
-  border: 1px;
-  padding: 8px;
-}
-
 .button-row {
-  display: flex;
+  display: inline;
   flex-direction: row;
   gap: 5%;
-  justify-content: center;
   margin: 10px;
 }
